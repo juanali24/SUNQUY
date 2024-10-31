@@ -1,0 +1,304 @@
+/* Estilo de la barra de navegación */
+.navbar {
+    background-color: #ffffff !important;
+    padding: 10px 30px;
+}
+
+.logo-img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-link {
+    color: #443e32;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #a5a503;
+}
+
+.form-inline .form-control {
+    width: 150px;
+}
+
+.form-inline .btn-outline-success {
+    color: #443e32;
+    border-color: #443e32;
+}
+
+.form-inline .btn-outline-success:hover {
+    background-color: #fbc800;
+    color: #0f0303;
+    border-color: #2b9f3a;
+}
+
+
+
+/* Estilo del banner */
+.banner {
+    position: relative;
+}
+
+.banner-img-wrapper {
+    height: 500px;
+    /* Ajusta la altura del banner si es necesario */
+    overflow: hidden;
+}
+
+.banner-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    /* Ajusta la posición vertical del texto */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: palpitar 1s infinite;
+}
+
+.banner-text h1 {
+    font-size: 2.2rem;
+    /* Ajusta el tamaño de la fuente según lo necesites */
+    color: #FFFFFF;
+    text-shadow: 2px 2px 5px #000000;
+    font-weight: bold;
+}
+
+/* Efecto de palpitación para el texto */
+@keyframes palpitar {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.05);
+    }
+}
+
+/* Estilo de la sección de productos */
+.productos .card {
+    border: none;
+    overflow: hidden;
+}
+
+.productos .card:hover img {
+    transform: scale(1.05);
+}
+
+.productos .card-title {
+    font-weight: bold;
+    color: #002855;
+}
+
+.productos .card img {
+    width: 100%;
+    height: 250px; /* Altura ajustada para un tamaño uniforme */
+    object-fit: cover; /* Recorta la imagen para que se ajuste sin distorsionarse */
+    transition: transform 0.3s ease;
+}
+
+.productos .card-title {
+    font-family: 'Poppins', sans-serif; /* Tipografía elegante */
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #2c3e50; /* Un tono azul oscuro profesional */
+    text-align: center;
+    margin-top: 15px;
+    text-transform: uppercase; /* Convertir a mayúsculas */
+    position: relative;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.productos .card-title {
+    font-family: 'Poppins', sans-serif; /* Fuente elegante */
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #000000; /* Color principal del texto */
+    text-align: center;
+    padding: 10px 20px;
+    border: 2px solid #000000; /* Borde del contorno */
+    border-radius: 30px; /* Borde redondeado para simular un botón */
+    display: inline-block;
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+}
+
+.productos .card-title:hover {
+    background-color: #2b9f3a; /* Color de fondo al pasar el cursor */
+    color: #ffffff; /* Cambiar el color del texto al pasar el cursor */
+}
+.section-title {
+    font-family: 'Poppins', sans-serif; /* Fuente elegante */
+    font-weight: 700;
+    font-size: 2rem;
+    color: #2b9f3a;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+    animation: palpitar-titulo 1s infinite; /* Efecto de palpitación */
+}
+
+@keyframes palpitar-titulo {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+
+/* Estilo general del pie de página */
+.footer {
+    background-color: #443e32;
+    /* Fondo azul oscuro */
+    color: #ffffff;
+    padding: 40px 0;
+    position: relative;
+}
+
+.footer h4 {
+    color: #ffffff;
+    /* Títulos en dorado */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffd700;
+    /* Color dorado en hover */
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 1.2rem;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #3b5998;
+    /* Fondo Facebook */
+    transition: background-color 0.3s ease;
+}
+
+.social-icons a:nth-child(2) {
+    background-color: #e70ba5e1;
+    /* Fondo LinkedIn */
+}
+
+.social-icons a:nth-child(3) {
+    background-color: #16ff06;
+    /* Fondo YouTube */
+}
+
+.social-icons a:hover {
+    background-color: #ffd700;
+    color: #003366;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ffffff;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+/* Ícono flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    text-decoration: none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    background-color: #1caa5c;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .footer h4 {
+        font-size: 1rem;
+    }
+
+    .footer-links li {
+        font-size: 0.9rem;
+    }
+
+    .footer-bottom p {
+        font-size: 0.8rem;
+    }
+}
+
+
+/* Estilo de la Sección de Promoción */
+.promo-section {
+    background-color: #f4f4f4;
+    /* Fondo gris claro */
+    padding: 20px 0;
+}
+
+.promo-img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.promo-img:hover {
+    transform: translateY(-5px);
+}
+

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agroindustrias SUNQUY - Producto</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/CSS/SuperProducto.css">
+    <link rel="icon" src="/FOTOS/logosolo.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand ml-3" href="/index.html">
+            <img src="/FOTOS/logo.png" alt="SUNQUY" class="logo-img">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="/HTML/Empresa.html">Empresa</a></li>
+                <li class="nav-item"><a class="nav-link" href="/HTML/Productos.html">Productos</a></li>
+                <li class="nav-item"><a class="nav-link" href="/HTML/Blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="/HTML/Contacto.html">Contacto</a></li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 mr-3" onsubmit="return searchProduct()">
+                <input class="form-control mr-sm-2" type="search" id="searchInput" placeholder="Buscar...."
+                    aria-label="Buscar" oninput="showSuggestions()">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+</header>
+
+<!-- Nueva sección de banner de imagen  -->
+<section class="banner">
+    <div class="container-fluid p-0">
+        <div class="banner-img-wrapper">
+            <img src="/FOTOS/Productos.png" class="img-fluid w-100" alt="Banner principal">
+            <div class="banner-text">
+                <h1 class="text-center text-white">PRODUCTOS DE GRAN SABOR Y CALIDAD</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Sección del Producto -->
+    <div class="container product-section mt-5">
+        <div class="row">
+            <div class="col-md-6 product-image">
+                <img src="/FOTOS/Fresas.png" alt="Producto Fresas" class="img-fluid w-100">
+            </div>
+            <div class="col-md-6 product-details">
+                <h2 class="product-title">Fresas</h2>
+                <p class="product-description">Deliciosas fresas frescas cosechadas con los mejores cuidados para garantizar su calidad.</p>
+                <div class="d-flex align-items-center">
+                  <label for="productQuantity">Cantidad:</label>
+                  <input type="number" id="productQuantity" class="form-control quantity-input" value="1" min="1">
+              </div>
+              <br>
+              <button class="btn btn-whatsapp" onclick="sendToWhatsApp()">
+                  <i class="fab fa-whatsapp"></i> Cotizar en WhatsApp
+              </button>
+              
+             
+            </div>
+        </div>
+    </div>
+    <section class="fixed-rating-section">
+      <div class="container my-5">
+        <h2 class="text-center rating-title">Valoración del Producto</h2>
+        <div class="fixed-rating-container">
+          <div class="star-rating-display" data-rating="4.5">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+          <p class="text-center rating-value">Calificación promedio: 5 de 5 estrellas</p>
+          <p class="text-center rating-description">¡Nuestras fresas han sido calificadas con 5 estrellas por su inigualable frescura y dulzura! Los clientes destacan su sabor excepcional, su textura jugosa y la calidad insuperable que ofrecemos. Nos esforzamos por cultivar cada fresa con el máximo cuidado, desde su siembra hasta su cosecha, para brindarte un producto fresco y saludable que puedas disfrutar en cualquier momento. Este reconocimiento nos impulsa a seguir entregando lo mejor de nuestros campos a tu mesa. ¡Gracias por elegir la excelencia y confiar en la pasión con la que cultivamos cada fruto!</p>
+        </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <div class="footer">
+      <div class="container text-center">
+        <div class="row">
+          <!--CATEGORIAS -->
+          <div class="col-md-4">
+            <h4>CATEGORIAS</h4>
+            <ul class="footer-links">
+              <li><a href="/HTML/Fresas.html">Fresas</a></li>
+              <li><a href="/HTML/Cuyvivo.html">Cuy vivo</a></li>
+              <li><a href="/HTML/Verduras.html">Verduras</a></li>
+              <li><a href="/HTML/HuevosdeGallina.html">Huevos de Gallinas</a></li>
+              <li><a href="https://forms.gle/qHCBF7QQWDxRtQgH7">Libro de Reclamaciones</a></li>
+            </ul>
+          </div>
+          <!-- Horarios de Atención -->
+          <div class="col-md-4">
+            <h4>HORARIOS DE ATENCIÓN</h4>
+            <p>Lunes a Viernes: 9:00 am – 5:00 pm</p>
+            <p>Sábados: 9:00 am – 1:00 pm</p>
+            <p>Domingo: Cerrado</p>
+          </div>
+
+          <!-- Contáctanos -->
+          <div class="col-md-4">
+            <h4>CONTÁCTANOS</h4>
+            <p>Email:ventas@sunquy.pe</p>
+            <p>Tel:+51 908876927</p>
+            <p>Redes Sociales</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/profile.php?id=61559746760458&mibextid=ZbWKwL"><i
+                  class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/agroindustrias_sunquy?igsh=MW5naGZ0bDI2dW5jaw%3D%3D"><i
+                  class="fab fa-instagram"></i></a>
+              <a href="https://api.whatsapp.com/send?phone=51908876927&text&type=phone_number&app_absent=0"><i
+                  class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom text-center">
+          <p>Copyright © 2024 Tienda Virtual | Sunquy</p>
+        </div>
+      </div>
+
+        <!-- Ícono de WhatsApp flotante -->
+        <a href="https://api.whatsapp.com/send?phone=51908876927&text&type=phone_number&app_absent=0"
+          class="whatsapp-float" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+</div>
+
+    <script src="/JS/Busqueda.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/JS/Fresas.js"></script>
+</body>
+</html>
